@@ -20,6 +20,31 @@
         <!-- /Yandex.Metrika counter -->
     </head>
     <body class="page">
-        <div class="container"></div>
+        <div class="test-container"></div>
+        <div class="module-wrapper">
+            <div id="booking_iframe" style="position: relative; padding-bottom: 30px;">
+                <div id="bn_iframe" style="font-family: 'Proxima nova', 'Helvetica Neue', 'Cera Pro Medium', Arial, Helvetica, sans-serif; position: absolute; right: 0; bottom: 0; font-size: 12px; line-height: 1em; opacity: .5; z-index: 10; margin-top: 10px;">
+                    <div style="color: #1403fc!important; background: rgba(0, 0, 0, 0)!important;">
+                        <a style="color: #808080!important; background: #fff!important;" href="https://bnovo.ru/bnovo-mb/?utm_source=client_modul_br" id="bnovo_link" target="_blank">Система управления отелем Биново ©</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"></script>
+        <script type="text/javascript">
+            (function () {
+                var BnovoBookFrame = new BookingIframe({
+                    html_id: 'booking_iframe',
+                    uid: 'a8351b23-605a-4d22-aa5d-e9a8c5d4dd0f',
+                    lang: 'ru',
+                    width: 'auto',
+                    height: 'auto',
+                    rooms: '',
+                    IsMobile: '0',
+                    scroll_to_rooms: '0',
+                });
+                BnovoBookFrame.init();
+            })();
+        </script>
     </body>
 </html>

@@ -1,12 +1,11 @@
-.page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
+.test-container {
     width: 200px;
     height: 200px;
+    margin: 50px auto;
     background-color: rgb(249, 255, 142);
+    cursor: pointer;
+}
+
+.module-wrapper {
+    padding: 0 5%;
 }
