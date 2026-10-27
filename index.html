@@ -20,31 +20,84 @@
         <!-- /Yandex.Metrika counter -->
     </head>
     <body class="page">
-        <div class="test-container"></div>
+
+        <!-- <div style="background-color: #f0f;"><a href="/booking.html?utm_source=ymetrica-test&utm_term=lalala">Ссылка на модуль</a></div> -->
+
+        <div style="height: 250px; background-color: blueviolet;"></div>
         <div class="module-wrapper">
-            <div id="booking_iframe" style="position: relative; padding-bottom: 30px;">
-                <div id="bn_iframe" style="font-family: 'Proxima nova', 'Helvetica Neue', 'Cera Pro Medium', Arial, Helvetica, sans-serif; position: absolute; right: 0; bottom: 0; font-size: 12px; line-height: 1em; opacity: .5; z-index: 10; margin-top: 10px;">
-                    <div style="color: #1403fc!important; background: rgba(0, 0, 0, 0)!important;">
-                        <a style="color: #808080!important; background: #fff!important;" href="https://bnovo.ru/bnovo-mb/?utm_source=client_modul_br" id="bnovo_link" target="_blank">Система управления отелем Биново ©</a>
-                    </div>
-                </div>
-            </div>
+
+
+
+
+            <div class="div_for__bn_widget_adaptive" id="div_for__bn_widget_adaptive" style="position: relative;">
+    <div id="absolute_div_for__bn_widget_adaptive">
+        <div id="_bn_widget_adaptive">
+            <a href="http://bnovo.ru/" id="_bnovo_link_" target="_blank" style="z-index: 1000;">Биново</a>
         </div>
-        <script src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"></script>
-        <script type="text/javascript">
-            (function () {
-                var BnovoBookFrame = new BookingIframe({
-                    html_id: 'booking_iframe',
-                    uid: 'a8351b23-605a-4d22-aa5d-e9a8c5d4dd0f',
-                    lang: 'ru',
-                    width: 'auto',
-                    height: 'auto',
-                    rooms: '',
-                    IsMobile: '0',
-                    scroll_to_rooms: '0',
-                });
-                BnovoBookFrame.init();
-            })();
-        </script>
+    </div>
+</div>
+<div style="height: 89px; display: none;" class="div_for__bn_widget_adaptive"></div>
+<script src="//widget.reservationsteps.ru/js/bnovo.js"></script>
+<script type="text/javascript">
+    (function() {
+        Bnovo_Widget.init(function() {
+            Bnovo_Widget.open('_bn_widget_adaptive', {
+                type: "horizontal",
+                uid: "a8351b23-605a-4d22-aa5d-e9a8c5d4dd0f",
+                lang: "ru",
+                width: "100%",
+                background: "#ffffff",
+                bg_alpha: "0",
+                padding: "0",
+                padding_mobile: "0",
+                border_radius: "0",
+                font_type: "inter",
+                title_color: "#000000",
+                title_size: "30",
+                without_title: "on",
+                inp_color: "#000000",
+                inp_bordhover: "#e7e7e7",
+                inp_bordcolor: "#e7e7e7",
+                inp_alpha: "100",
+                btn_background: "#000000",
+                btn_background_over: "#000000",
+                btn_textcolor: "#ffffff",
+                btn_textover: "#ffffff",
+                btn_bordcolor: "#000000",
+                btn_bordhover: "#000000",
+                adults_default: "1",
+                dates_preset: "on",
+                dfrom_tomorrow: "on",
+                dto_nextday: "on",
+                url: "",
+                switch_mobiles: "on",
+                switch_mobiles_width: "980"
+            });
+        });
+    })();
+</script>
+<style>
+    @media screen and (min-width: 980px) {
+        #div_for__bn_widget_adaptive {max-width: 100%;}
+        #absolute_div_for__bn_widget_adaptive {position: absolute; width: 100%; z-index: 10;}
+        .div_for__bn_widget_adaptive {height: 89px;}
+    }
+    @media screen and (max-width: 980px) {
+        #div_for__bn_widget_adaptive {max-width: 100%;}
+        #absolute_div_for__bn_widget_adaptive {position: relative; width: 100%; z-index: 10;}
+        .div_for__bn_widget_adaptive {height: 280px;}
+    }
+</style>
+
+
+
+
+
+        </div>
+        <div style="height: 650px; background-color: blueviolet;"></div>
+
+
+
+
     </body>
 </html>
